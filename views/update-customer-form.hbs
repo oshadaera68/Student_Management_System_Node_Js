@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Update Customer</li>
+            </ol>
+        </nav>
+    </div>
+
+    <hr>
+
+<form action="/modify-customer" method="post">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="nic">Nic</label>
+                    <input type="text" id="nic" name="nic" class="form-control" value="{{this.customer.nic}}">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" value="{{this.customer.name}}">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" class="form-control" value="{{this.customer.address}}">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="salary">Salary</label>
+                    <input type="text" id="salary" name="salary" class="form-control" value="{{this.customer.salary}}">
+                </div>
+            </div>
+            <div class="col-12">
+                <br>
+                <button type="submit" class="btn btn-primary col-12">Update Customer</button>
+            </div>
+        </div>
+    </div>
+</form>
+    
+</body>
+</html>
